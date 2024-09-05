@@ -372,6 +372,8 @@ export const top_ten_movies = [
     seasons: 1,
     quality: "HD",
     duration: 15,
+    title:"Orion & The Dark",
+    poster:"https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQS_YEjdVd-AULwfdInnQNYkO4BCHKlwI7azAcU8RVD5snX48z6SV4OBIrezf_-i7bOHk5wwK0Val777SE9UQPN3SsbsntwaM1VquG3DJTjqi6BcKMBc3VUixDUePtSHUooXO4iIwzfQVeSZlYP-guyIW.jpg?r=a3a",
   },
   {
     id: 2,
@@ -383,6 +385,8 @@ export const top_ten_movies = [
     seasons: 1,
     quality: "HD",
     duration: 15,
+    title:"Players",
+    poster:"https://www.whats-on-netflix.com/wp-content/uploads/2023/12/players-movie-netflix-everything-we-know-jpg.webp"
   },
   {
     id: 3,
@@ -394,6 +398,8 @@ export const top_ten_movies = [
     seasons: 1,
     quality: "HD",
     duration: 15,
+    title:"Horrible Bosses",
+    poster:"https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbWAWRjcpda-0kWqU_rLKR-C7zynbbI8ufE1iumcZebufm3lkB9s5eHs2roxRuvIjxFSoNptXHn3JtN2FPgI0V2dPz1oiVostga8.jpg?r=ea9"
   },
   {
     id: 4,
@@ -405,6 +411,8 @@ export const top_ten_movies = [
     seasons: 1,
     quality: "HD",
     duration: 15,
+    title:"American Assassin",
+    poster:"https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABdkDjJg1mMnYrTiRBt-Dh0FBPAyD7YkfTdOU1hltEsycDEMFqZdoTdduNOL4RnjQP1F9_zf7LGfkEEnJ46DYqvHU6c2od6i93SvV.jpg?r=2c7"
   },
   {
     id: 5,
@@ -416,5 +424,7 @@ export const top_ten_movies = [
     seasons: 1,
     quality: "HD",
     duration: 15,
+    title:"The Super Mario Bros",
+    poster:"https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcwNvPuWsPONmWwDYlM6zb25YT4FzUMKsFQaQIYQLjAPK0jZIM13ZdI4M4RHxOtJgyE7zRQOZ7uuh_btyNzFLqTrdcVtIUY6T3_T.jpg?r=b35"
   },
 ];

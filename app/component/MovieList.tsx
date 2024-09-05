@@ -21,7 +21,7 @@ const MovieList = ({ data, title, isTopTen = false }: MovieListProps) => {
       ) : (
         <div className="grid grid-cols-5 gap-2">
           {data.map((movie: any, idx: number) => (
-            <TopTenMovieCard key={idx} data={movie} serial={idx + 1} />
+            <TopTenMovieCard key={idx} data={movie} />
           ))}
         </div>
       )}

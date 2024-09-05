@@ -4,8 +4,9 @@ interface Props {
   href: string;
   label: string;
   style?: string;
+  fontSize?:string;
 }
-const Button = ({ style, href, label }: Props) => {
+const Button = ({ style, href, label,fontSize }: Props) => {
   return (
     <Link
       href={`/${href}`}

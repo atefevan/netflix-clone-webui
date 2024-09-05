@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.nerko_one{
+  font-family: var(--font-nerko_one);
+}
+
 body {
   @apply bg-zinc-900 h-full overflow-x-hidden;
 }

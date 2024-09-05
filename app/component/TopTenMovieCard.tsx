@@ -1,4 +1,7 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
+import Modal from "./Modal";
+import SignupButton from "./SignupButton";
 
 interface TopTenProps {
   data: any;
@@ -6,21 +9,78 @@ interface TopTenProps {
 }
 
 const TopTenMovieCard = ({ data, serial }: TopTenProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="flex flex-col items-center py-4 relative">
-      <img
-        src={`posters/${data.id_img}.png`}
-        alt={`${data.id_img}`}
-        className="w-full sm:w-3/4 max-w-xs object-cover"
-      />
-      <div className="w-full sm:w-3/4 absolute top-[-2px] left-[100px]">
-        <img
-          className="w-full h-auto max-h-48 object-contain"
-          src={`posters/${data.thumbnail}.png`}
-          alt={`${data.thumbnail}`}
-        />
+    <>
+      <div
+        className="relative min-w-[250px] flex items-center transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+        onClick={openModal}
+      >
+        <div className="relative w-28 flex justify-center mt-36 z-10 left-5">
+          <img
+            src={`/posters/${data.id_img}.png`}
+            alt={data.id_img}
+            className="w-full"
+          />
+        </div>
+        <div className="relative w-full flex justify-center">
+          <img
+            className="w-full object-contain rounded-lg"
+            src={`/posters/${data.thumbnail}.png`}
+            alt={data.thumbnail}
+          />
+        </div>
       </div>
-    </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <div className="relative">
+          <img
+            src={`${data.poster}`}
+            alt="thumbnail"
+            className="h-80 w-full object-cover"
+            draggable={false}
+          />
+          <div className="absolute inset-x-0 bottom-0 h-20 w-full bg-gradient-to-t from-[#191919] to-transparent" />
+        </div>
+        <p className="mt-4 text-white nerko_one text-5xl px-5">{data.title}</p>
+        <div className="flex mt-2">
+          <p className="text-white roboto text-sm px-2 py-1 ml-5 mr-2 bg-[#414141] rounded-md">
+            {"2024"}
+          </p>
+          <p className="text-white roboto text-sm px-2 py-1 mx-2 bg-[#414141] rounded-md">
+            {"13+"}
+          </p>
+          <p className="text-white roboto text-sm px-2 py-1 mx-2 bg-[#414141] rounded-md">
+            {"Movie"}
+          </p>
+          <p className="text-white roboto text-sm px-2 py-1 mx-2 bg-[#414141] rounded-md">
+            {"Action"}
+          </p>
+          <p className="text-white roboto text-sm px-2 py-1 mx-2 bg-[#414141] rounded-md">
+            {"Sci-Fi"}
+          </p>
+          <p className="text-white roboto text-sm px-2 py-1 mx-2 bg-[#414141] rounded-md">
+            {"Adventure"}
+          </p>
+        </div>
+        <p className="text-white roboto text-sm px-3 mt-6 py-1 mx-2">
+          {
+            "The future of those in the dystopian city of Kasi is altered when the destined arrival of Lord Vishnu's final avatar launches a war against darkness."
+          }
+        </p>
+        <div className="p-3 mt-3 ">
+          <SignupButton title="Play" w="w-40" onClick={() => console.log('Clicked !')}/>
+        </div>
+      </Modal>
+    </>
   );
 };
 
