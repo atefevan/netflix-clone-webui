@@ -6,11 +6,8 @@ import Faq from "./component/Faq";
 import { faqs } from "./mock";
 import Button from "./component/Button";
 import Footer from "./footer/page";
-import MovieList from "./component/MovieList";
 import { top_ten_movies } from "@/public/movies";
 import React from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import TopTenMovieCard from "./component/TopTenMovieCard";
 import HomeSlider from "./component/HomeSlider";
 import Slot_5 from "./component/Slot_5";
 
@@ -56,18 +53,6 @@ export default function Home() {
         list={[...top_ten_movies, ...top_ten_movies]}
       />
       <Slot_5  />
-      {/* Enjoy your TV */}
-      {/* <Slot_1 /> */}
-      {/* <Divider /> */}
-      {/* Downloading Movie */}
-      {/* <Slot_2 /> */}
-      {/* <Divider /> */}
-      {/* Watch Everywhere */}
-      {/* <Slot_3 /> */}
-      {/* <Divider /> */}
-      {/* Kids Poster*/}
-      {/* <Slot_4 /> */}
-      {/* <Divider /> */}
 
       {/* FAQ */}
       <div className="bg-black flex flex-col px-6 sm:px-8 py-12 justify-center items-center">

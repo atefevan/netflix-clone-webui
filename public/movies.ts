@@ -428,3 +428,22 @@ export const top_ten_movies = [
     poster:"https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcwNvPuWsPONmWwDYlM6zb25YT4FzUMKsFQaQIYQLjAPK0jZIM13ZdI4M4RHxOtJgyE7zRQOZ7uuh_btyNzFLqTrdcVtIUY6T3_T.jpg?r=b35"
   },
 ];
+
+export const videoSources = [
+  {
+    quality: "Low @360",
+    url: "https://v-prothomalo.viewlift.com/Renditions/20231217/1702810590904_prothomalo_1702805798964_bolona_tumi_amar_CUSTOM_CODEC_TS/hls/video_1.m3u8",
+  },
+  {
+    quality: "Medium @480",
+    url: "https://v-prothomalo.viewlift.com/Renditions/20231217/1702810590904_prothomalo_1702805798964_bolona_tumi_amar_CUSTOM_CODEC_TS/hls/video_3.m3u8",
+  },
+  {
+    quality: "Good @720",
+    url: "https://v-prothomalo.viewlift.com/Renditions/20231217/1702810590904_prothomalo_1702805798964_bolona_tumi_amar_CUSTOM_CODEC_TS/hls/video_0.m3u8",
+  },
+  {
+    quality: "Best @1080",
+    url: "https://v-prothomalo.viewlift.com/Renditions/20231217/1702810590904_prothomalo_1702805798964_bolona_tumi_amar_CUSTOM_CODEC_TS/hls/video_2.m3u8",
+  },
+];

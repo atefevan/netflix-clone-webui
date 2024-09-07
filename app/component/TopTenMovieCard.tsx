@@ -1,7 +1,8 @@
-'use client';
+import Link from "next/link";
 import React, { useState } from "react";
 import Modal from "./Modal";
 import SignupButton from "./SignupButton";
+import Button from "./Button";
 
 interface TopTenProps {
   data: any;
@@ -40,6 +41,8 @@ const TopTenMovieCard = ({ data, serial }: TopTenProps) => {
           />
         </div>
       </div>
+
+      {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className="relative">
           <img
@@ -76,8 +79,10 @@ const TopTenMovieCard = ({ data, serial }: TopTenProps) => {
             "The future of those in the dystopian city of Kasi is altered when the destined arrival of Lord Vishnu's final avatar launches a war against darkness."
           }
         </p>
-        <div className="p-3 mt-3 ">
-          <SignupButton title="Play" w="w-40" onClick={() => console.log('Clicked !')}/>
+
+        {/* Play Button */}
+        <div className="p-3 mt-3">
+          <Button href={`play/${data.id}`} label={"Play"} />
         </div>
       </Modal>
     </>
